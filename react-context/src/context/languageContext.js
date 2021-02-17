@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Context = React.createContext('english'); // english is set as a default value.
-
+// Making use of context API to create Store at root level and pass it to Provider to make sure state change handled by a single component only.
 export class LanguageStore extends React.Component {
     state = {language: 'english'}
 
